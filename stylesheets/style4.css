@@ -1,0 +1,83 @@
+@import "style2.css";
+
+/*
+    ================================
+                Venue
+    ================================
+*/
+
+@media (min-width: 500px) {
+    .venue-container {
+        width: 80%; 
+        margin: 0 auto;
+    }
+    
+    .reg-column-half {
+        width: 50%;
+    }
+}
+
+.main-arena-title {
+    font-weight: 600;
+    text-align: center;
+    border: 7px solid gray;
+    background-color: black;
+    color: azure;
+    padding: 15px 0;
+}
+
+.venue-hotel-title {
+    font-weight: 600;
+    text-align: center;
+    border: 7px solid gray;
+    background-color: black;
+    color: azure;
+    padding: 15px 0;
+}
+
+.venue-styles {
+    float: left;
+}
+
+.venue-styles h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.venue-styles p {
+    padding: 2px;
+    font-size: 20px;
+}
+
+.venue-styles a {
+    font-size: 20px;
+    color: azure;
+}
+
+.venue-styles a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.venue-box {
+    border: 7px solid lightgrey;
+    background-color: lightslategray;
+    padding: 15px;
+    margin-top: 40px;
+    display: inline-block;
+    color: azure;
+}
+.venue-x {
+    width: 50%;
+}
+
+.venue-y {
+    width: 50%;
+    float: left;
+}
+
+iframe {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 100%;
+}

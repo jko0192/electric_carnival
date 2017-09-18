@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Electric Carnival</title>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+    <link href = "/stylesheets/style5.css" rel = "stylesheet" type = "text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel = "stylesheet" type = "text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+</head>
+    
+<body>
+    <header class = "main-header">
+        <div class = "music-container clearfix">
+            <img id = "music-logo" src = "images/beats.png" alt = "Music Showdown Logo">
+            <h4 class = "navHeader"><a href = "./index.html" class ="music-links">Electric Carnival</a></h4>
+            <nav class ="navBar">    
+                <ul>
+                    <li><a href = "./index.html" class = "music-links">Home</a></li>
+                    <li><a href = "./performers.html" class = "music-links">Performers</a></li>
+                    <li><a href = "./schedule.html" class = "music-links">Schedule</a></li>
+                    <li><a href = "./venue.html" class = "music-links">Venue</a></li>
+                    <li><a href = "./register.html" class = "music-links">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class = "performer-header-container">
+        <div class = "performer-header-style">
+            <h2>Registration</h2>
+            <p>Purchase your tickets here for the Electric Carnival! <br>
+                Create an account with us!
+            </p>
+        </div>
+    </section>
+    
+    <section class="clearfix">
+        <div class="half-container">
+            <form action="register.html" method="post" class="one-time-reg-form reg-column-half">
+                <h3>One Time Registration</h3>
+                
+                <fieldset class="reg-user-info">
+                    <legend><span class="reg-number reg-space-first">1</span> <span class="legend-title">User Info</span></h4></legend>
+                    
+                    <label for="client_name">Name:</label>
+                    <input type="text" id="client_name" name="user_name" />
+                    
+                    <label for="client_email" class="label-space">Email:</label>
+                    <input type="email" id="client_email" name="user_email" />
+                    
+                    <label for="client_address" class="label-space">Address:</label>
+                    <input type="text" id="client_address" name="user_address" />
+                    
+                    <label for="client_city" class="label-space">City:</label>
+                    <input type="text" id="client_city" name="user_city" />
+                    
+                    <label for="client_state" class="label-space">State:</label>
+                    <input type="text" id="client_email" name="user_email" />
+                    
+                    <label for="client_zipcode" class="label-space">Zip:</label>
+                    <input type="text" id="client_zipcode" name="user_zipcode"/>
+                    
+                    <label for="client_ticket" class="label-space">Select Number of Tickets:</label>
+                    <select id="client_ticket" name="user_ticket">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset class = "reg-user-info">
+                    <legend><span class="reg-number reg-space">2</span> <span class="legend-title">Favorite Artist Poll</span></legend>
+                    
+                    <label for="artist_poll">Select Favorite Artist:</label>
+                    <select id="artist_poll" name="user_ticket">
+                        <optgroup label="Male Artists">
+                            <option value="justin_bieber">Justin Bieber</option>
+                            <option value="drake">Drake</option>
+                            <option value="r3hab">R3HAB</option>
+                            <option value="hardwell">Hardwell</option>
+                        </optgroup>
+                        
+                        <optgroup label="Female Artists">
+                            <option value="taylor_swift">Taylor Swift</option>
+                            <option value="katy_perry">Katy Perry</option>
+                            <option value="selena_gomez">Selena Gomez</option>
+                            <option value="beyonce">Beyonce</option>
+                            <option value="rihanna">Rihanna</option>
+                            <option value="arianna_grande">Arianna Grande</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                
+                <fieldset class="t-shirt-field">
+                    <legend><span class="reg-number reg-space">3</span><span class="legend-title">Free T-Shirt Size</span></legend>
+                    
+                    <div>
+                        <input type="radio" id="small" value ="size_small" name="shirt_size"/>
+                        <label for="small">Small</label>
+                    </div>
+                    
+                    <div class="move">
+                        <input type="radio" id="medium" value ="size_medium" name="shirt_size" class="move" />
+                        <label for="medium">Medium</label>
+                    </div>
+                    
+                    <div class="move">
+                        <input type="radio" id="large" value ="size_large" name="shirt_size" class="move"/>
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+            
+                <button class="reg-submit-button" type="button">Submit</button>
+            </form>
+        </div><!--
+    
+        --><div class="half-container profile-box">
+            <form class="profile-login" action="register.html" method="post">
+                <div class="pro-box">
+                    <label for="profile_first_name">First Name:</label>
+                    <input type="text" id="profile_first_name" name="new_user_first_name" />
+                </div>
+                
+                <div class="pro-box">
+                    <label for="profile_last_name">Last Name:</label>
+                    <input type="text" id="profile_last_name" name="new_user_last_name" />
+                </div>
+                
+                <div class="pro-box">
+                    <label for="profile_email">Email:</label>
+                    <input type="text" id="profile_email" name="new_user_email" />
+                </div>
+                
+                <div class="pro-box">
+                    <label for="profile_password">Password:</label>
+                    <input type="text" id="profile_password" name="new_user_password" />
+                </div>
+                <button type="button"class="pro-submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    
+
+ <footer class = "main-footer clearfix">
+        <div class = "container">
+            <h4 class = "navHeader">
+                <a href = "./index.html" class = "music-links">&copy;Electric Carnival</a>
+            </h4>
+            <nav class ="navBar">    
+                <ul>
+                    <li><a href ="./index.html" class = "music-links">Home</a></li>
+                    <li><a href ="./performers.html" class = "music-links">Performers</a></li>
+                    <li><a href ="./schedule.html" class = "music-links">Schedule</a></li>
+                    <li><a href = "./venue.html" class = "music-links">Venue</a></li>
+                    <li><a href = "./register.html" class = "music-links">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

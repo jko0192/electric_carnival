@@ -1,0 +1,158 @@
+@import "style2.css";
+
+
+/*
+    ==============================
+         Registration Form
+    ==============================
+*/
+
+@media (min-width: 300px) {
+    .reg-column-half {
+        width: 100%;
+    }
+    
+    .one-time-reg-form,
+    .reg-user-info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .one-time-reg-form {
+        padding-left: 15px;
+        border: 7px solid lightblue;
+        background-color: darkgray;
+        color: azure;
+        display: inline-block;
+    }
+
+
+    .one-time-reg-form h3 {
+        font-size: 28px;
+        font-weight: 600;
+        color: lightgreen;
+    }
+
+
+    .reg-user-info input {
+        width: 50%;
+    }
+
+    .reg-user-info label {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .label-space {
+        margin-top: 30px;
+    }
+
+    .reg-user-info select {
+        width: 30%;
+        color: black;
+        font-size: 18px;
+    }
+
+    .legend-title {
+        font-size: 1em;
+        font-weight: 500;
+        color: azure;
+    }
+
+    .reg-number {
+        border-radius: 50%;
+        background-color: lightgreen;
+        color: azure;
+        padding: 5px;
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    .reg-space-first {
+        margin-top: 18px;
+    }
+
+    .reg-space {
+        margin-top: 40px;
+    }
+    
+    .t-shirt-field label {
+        font-size: 18px;
+    }
+    
+    .t-shirt-field div{
+        display: inline-block;
+    }
+    
+    .move {
+        margin-left: 20px;
+    }
+    
+    .reg-submit-button {
+        border-radius: 5px;
+        width: 100px;
+        margin: 25px 0;
+        background-color: lightblue;
+        color: azure;
+        font-size: 20px;
+        font-weight: 500;
+        border: 5px solid azure;
+    }
+    
+    .half-container {
+        width: 50%;
+        float: left;
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media(min-width: 300px) {
+    
+    .profile-box {
+        padding-top: 30px;
+    }
+    .profile-login {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 5px solid lightblue; 
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+    }
+    
+    .pro-box {
+        flex: 1 50%;
+        padding: 20px;
+    }
+    
+    .pro-box label{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .pro-box input {
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    .pro-submit {
+        margin-left: 20px;
+        border-radius: 10px;
+        width: 100px;
+        background-color: black;
+        color: azure;
+        font-size: 20px;
+        font-weight: 500;
+        border: 5px solid azure;
+    }
+}
+

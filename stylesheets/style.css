@@ -1,0 +1,308 @@
+/* 
+  ===================================================
+                Eric Meyer's Reset
+  ===================================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    ==========================================
+                      Body
+    ==========================================
+*/
+
+body {
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+    ==========================================
+                   Border-box
+    ==========================================
+*/
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+/*
+    ===========================================
+                    Media Query
+    ===========================================
+*/
+
+@media(min-width: 300px) {
+    .music-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .slide-show-container {
+        width: 100%;
+        background-image: url('../images/party-pic.jpg');
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    .background-area {
+        text-align: center;
+    }
+    
+    .background-area h3 {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+        padding-top: 150px;
+        color: azure;
+        font-weight: 600;
+        text-shadow: 5px 2px black;
+        letter-spacing: 0.5em;
+    }
+    
+    .background-area button {
+        font-size: 25px;
+        margin-top: 40px;
+        border-radius: 10px;
+        background-color: black;
+        color: azure;
+        padding: 10px 10px;
+        font-weight: 600;
+        border: 5px solid darkred;
+    }
+    
+    .electric-button {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .electric-button:hover {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    .singer-slides {
+        max-width: 100%;
+        display: none;
+    }
+    
+    #click-previous, #click-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        padding: 15px;
+        color: gold;
+        font-weight: 500;
+        font-size: 30px;
+        transition: 0.8s ease;
+        border-radius: 5px;
+    }
+    
+    #click-next {
+        right: 0;
+    }
+    
+    #click-previous:hover, #click-next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+}   
+
+
+
+/*
+    ===========================================
+                    Main Header
+    ===========================================
+*/
+
+.main-header {
+    background-color: black;
+    color: white;
+}
+
+
+.main-header h4 {
+    font-size: 20px;
+}
+
+#music-logo {
+    float:left;
+    width: 4%;
+    padding: 15px 0;
+    margin-right: 10px;
+    transition: all .5s;
+}
+
+#music-logo:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*
+    =============================================
+                    Navigation Menu
+    =============================================
+*/
+
+.navHeader,
+.navBar,
+.navBar li {
+    display: inline-block;
+}
+
+.navHeader {
+    float: left;
+    padding: 15px 0;
+}
+
+.navBar{
+    float: right;
+}
+
+.navBar li {
+    padding-top: 27px;
+    padding-right: 17px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.music-links {
+    color: inherit;
+}
+
+.music-links:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.music-links:focus {
+    text-decoration: none;
+    color: yellow;
+}
+
+
+/*
+    ==============================================
+                    3 Sections
+    ==============================================
+*/
+
+.electric-box {
+    display: inline-block;
+    border: 5px solid azure;
+    background-color: black;
+    color: azure;
+    text-align: center;
+}
+
+.electric-box h1 {
+    font-size: 30px;
+    padding-bottom: 8px;
+    font-weight: 500;
+    text-shadow: .5px .5px 0
+}
+
+.electric-box button {
+    font-size: 18px;
+    margin-bottom: 25px;
+    background-color: skyblue;
+    border-radius: 8px;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, .5);
+    padding: 5px;
+    border: 5px solid white;
+}
+
+.electric-box button a {
+    padding: 4px;
+    font-weight: 700;
+}
+
+.electric-box button a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.electric-box button a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.electric-box button a:hover {
+    color: yellow;
+}
+
+.electric-box img {
+    max-width: 100%;
+}
+
+.col {
+    width: 33.33%;
+}
+
+
+/*
+    =====================================
+                    Footer
+    =====================================
+*/
+
+.main-footer {
+    background-color: black;
+    color: white;
+}
+
+.main-footer h4 {
+    font-size: 20px;
+    margin-left: 20px;
+}

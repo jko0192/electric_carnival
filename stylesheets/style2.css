@@ -1,0 +1,338 @@
+/* 
+  ===================================================
+                Eric Meyer's Reset
+  ===================================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    ==========================================
+                      Body
+    ==========================================
+*/
+
+body {
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+    ==========================================
+                   Border-box
+    ==========================================
+*/
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+/*
+    ===========================================
+                    Media Query
+    ===========================================
+*/
+
+@media(min-width: 500px) {
+    .music-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .performer-header-container {
+        width: 100%;
+    }
+    
+    .artist-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .artist-style img {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        transition: all .5s;
+    }
+    
+    .artist-style img:hover {
+        transform: scale(1.2);
+    }
+    
+    .performer-header-style {
+        text-align: center;
+        padding: 40px 0;
+        background: linear-gradient(to right, #f46b45, #eea849);
+    }
+    
+    .col-x {
+        width: 50%;
+    }
+    
+    .col-y {
+        width: 50%;
+    }
+    
+    .col {
+        float: left;
+    }
+    
+    .circular-image {
+        width: 400px;
+        height: 400px;
+    }
+    
+}   
+
+
+
+/*
+    ===========================================
+                    Main Header
+    ===========================================
+*/
+
+.main-header {
+    background-color: black;
+    color: white;
+}
+
+.main-header h4 {
+    font-size: 20px;
+}
+
+
+#music-logo {
+    float:left;
+    width: 4%;
+    padding: 15px 0;
+    margin-right: 10px;
+    transition: all .5s;
+}
+
+#music-logo:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/*
+    =============================================
+                    Navigation Menu
+    =============================================
+*/
+
+.navHeader,
+.navBar,
+.navBar li {
+    display: inline-block;
+}
+
+.navHeader {
+    float: left;
+    padding: 15px 0;
+}
+
+.navBar{
+    float: right;
+}
+
+.navBar li {
+    padding-top: 27px;
+    padding-right: 17px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.music-links {
+    color: inherit;
+}
+
+.music-links:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.music-links:focus {
+    text-decoration: none;
+    color: yellow;
+}
+
+
+/*
+    =====================================
+                Sub Heading
+    =====================================
+
+*/
+
+.performer-header-container h2 {
+    font-weight: 500;
+    color: azure;
+}
+
+.performer-header-container p {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 400;
+    color: azure
+}
+
+/*
+    =====================================
+                 Performers
+    =====================================
+*/
+
+.artist-style {
+    color: black;
+    text-align: center;
+}
+
+.artist-style h3 {
+    padding: 15px;
+    color: grey;;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.artist-info {
+    border: solid 9px darkred;
+    color: azure;
+    border-radius: 20px;
+    font-weight: 500;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 40px;
+    background-color: black;
+}
+
+.artist-info li {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.descriptionText {
+    font-size: 20px;
+    font-weight: 500;
+    color: azure;
+}
+
+.image-border-style {
+    border: 10px solid lightgrey;
+}
+
+.circular-image {
+    width: 400px;
+    height: 400px;
+}
+
+#justin-bieber {
+    width: 380px;
+    height: 380px;
+}
+
+#katy-perry{
+    width: 380px;
+    height: 380px;
+}
+
+
+#selena-gomez {
+    width: 380px;
+    height: 380px;
+}
+
+#beyonce {
+    width: 65%;
+}
+
+#drake {
+    width: 52%;
+}
+
+#r3hab {
+    width: 50%;
+}
+
+#rihanna {
+    width: 55%;
+}
+
+#ariana-grande {
+    width: 55%;
+}
+
+#justin-timberlake {
+    width: 53%;
+}
+
+
+
+/*
+    =====================================
+                    Footer
+    =====================================
+*/
+
+.main-footer {
+    background-color: black;
+    color: white;
+}
+
+.main-footer h4 {
+    font-size: 20px;
+    margin-left: 20px;
+}
