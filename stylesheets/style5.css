@@ -37,6 +37,9 @@
 
     .reg-user-info input {
         width: 50%;
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
     }
 
     .reg-user-info label {
@@ -142,6 +145,8 @@
     .pro-box input {
         width: 80%;
         border-radius: 5px;
+        font-size: 27px;
+        font-weight: 500;
     }
     
     .pro-submit {
@@ -153,6 +158,14 @@
         font-size: 20px;
         font-weight: 500;
         border: 5px solid azure;
+    }
+
+    .create-profile {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+        color: azure;
+        background-color: darkgrey;
     }
 }
 
