@@ -54,7 +54,9 @@
     .reg-user-info select {
         width: 30%;
         color: black;
-        font-size: 18px;
+        font-size: 20px;
+        border: 5px solid azure;
+        font-weight: 500;
     }
 
     .legend-title {
