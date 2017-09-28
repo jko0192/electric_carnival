@@ -75,7 +75,6 @@ body {
     ===========================================
 */
 
-@media(min-width: 500px) {
     .music-container {
         width: 80%;
         margin: 0 auto;
@@ -124,7 +123,6 @@ body {
         height: 400px;
     }
     
-}   
 
 
 
@@ -335,4 +333,11 @@ body {
 .main-footer h4 {
     font-size: 20px;
     margin-left: 20px;
+}
+
+
+@media(min-width: 300px) and (max-width: 1100px) {
+    .col {
+        width: 100%;
+    }
 }

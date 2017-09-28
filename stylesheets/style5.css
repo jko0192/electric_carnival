@@ -7,7 +7,6 @@
     ==============================
 */
 
-@media (min-width: 300px) {
     .reg-column-half {
         width: 100%;
     }
@@ -115,9 +114,7 @@
         display: table;
         clear: both;
     }
-}
 
-@media(min-width: 300px) {
     
     .profile-box {
         padding-top: 30px;
@@ -169,5 +166,15 @@
         color: azure;
         background-color: darkgrey;
     }
+
+@media(min-width: 300px) and (max-width: 900px) {
+    .half-container {
+        width: 100%;
+    }
 }
 
+@media(min-width: 729px) and (max-width: 900px) {
+    .email-box label{
+        margin-right: 10px;
+    }
+}
